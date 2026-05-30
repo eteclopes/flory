@@ -25,7 +25,6 @@ const C = {
   rlGrad:'linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)',
 };
 const Font = { display:"'Cormorant Garamond',Georgia,serif", body:"'DM Sans',system-ui,sans-serif" };
-const LOGO_SRC = "data:image/png;base64,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";
 
 /* ─── GLOBAL CSS ─────────────────────────────── */
 const CSS = `
@@ -383,8 +382,11 @@ function Sidebar({activeTab,setActiveTab,onBack}){
   return(
     <div className="dash-sidebar asl" style={{width:252,flexShrink:0,background:C.white,borderRight:`1px solid ${C.border}`,display:'flex',flexDirection:'column',position:'sticky',top:0,height:'100vh',overflowY:'auto',fontFamily:Font.body}}>
       <div className="slu">
-        <div style={{display:'flex',alignItems:'center'}}>
-          <img src={LOGO_SRC} alt="Flory" style={{height:32,objectFit:'contain'}}/>
+        <div style={{display:'flex',alignItems:'center',gap:10}}>
+          <div style={{width:36,height:36,borderRadius:10,background:`linear-gradient(135deg,${C.peach},${C.rose})`,display:'flex',alignItems:'center',justifyContent:'center'}}>
+            <Sparkles size={16} color={C.white}/>
+          </div>
+          <span style={{fontFamily:Font.display,fontSize:24,fontWeight:600,color:C.dark,letterSpacing:-.3}}>flory</span>
         </div>
       </div>
       <div className="sln" style={{animation:'pulse 3s ease-in-out infinite'}}>
@@ -430,9 +432,12 @@ function MobTop({activeTab}){
   const cur=NAV.find(n=>n.id===activeTab);
   return(
     <div className="mob-top">
-      <div style={{display:'flex',alignItems:'center'}}>
-          <img src={LOGO_SRC} alt="Flory" style={{height:26,objectFit:'contain'}}/>
+      <div style={{display:'flex',alignItems:'center',gap:8}}>
+        <div style={{width:28,height:28,borderRadius:8,background:`linear-gradient(135deg,${C.peach},${C.rose})`,display:'flex',alignItems:'center',justifyContent:'center'}}>
+          <Sparkles size={12} color={C.white}/>
         </div>
+        <span style={{fontFamily:Font.display,fontSize:18,fontWeight:600,color:C.dark}}>flory</span>
+      </div>
       <div style={{display:'flex',alignItems:'center',gap:8}}>
         {cur&&<span style={{fontSize:13,fontWeight:600,color:C.dark}}>{cur.label}</span>}
         <div style={{width:34,height:34,borderRadius:9,border:`1px solid ${C.border}`,background:C.white,display:'flex',alignItems:'center',justifyContent:'center'}}>
@@ -918,19 +923,19 @@ function NetworkTab(){
       <div className="g2">
         {filtered.map((cr,i)=>(
           <Card key={i} cls={`afu d${(i%4)+1}`} style={{overflow:'hidden',padding:0}}>
-            {/* Cover */}
-            <div style={{position:'relative',height:80}}>
-              <Img src={cr.cover} style={{height:80,width:'100%'}}/>
-              <div style={{position:'absolute',inset:0,background:'rgba(42,18,8,.25)'}}/>
+            {/* Cover — full image, fixed height, no clip */}
+            <div style={{position:'relative',height:120,flexShrink:0}}>
+              <Img src={cr.cover} style={{height:120,width:'100%'}} cls=""/>
+              <div style={{position:'absolute',inset:0,background:'linear-gradient(to bottom,rgba(42,18,8,.1),rgba(42,18,8,.38))'}}/>
             </div>
-            {/* Avatar overlapping */}
-            <div style={{padding:'0 18px 18px',marginTop:-22}}>
-              <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-end',marginBottom:12}}>
-                <Avatar src={cr.img} name={cr.name} size={44} style={{border:`3px solid ${C.white}`,boxShadow:'0 2px 10px rgba(0,0,0,.12)'}}/>
-                <span style={{fontSize:11,fontWeight:700,color:C.medium,background:C.peachLight,padding:'4px 10px',borderRadius:100,marginBottom:2}}>{cr.match}% match</span>
+            {/* Avatar row — sits below cover, no negative margin overlap */}
+            <div style={{padding:'0 18px 18px'}}>
+              <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:-22,marginBottom:12}}>
+                <Avatar src={cr.img} name={cr.name} size={44} style={{border:`3px solid ${C.white}`,boxShadow:'0 2px 10px rgba(0,0,0,.15)',flexShrink:0}}/>
+                <span style={{fontSize:11,fontWeight:700,color:C.medium,background:C.peachLight,padding:'4px 10px',borderRadius:100}}>{cr.match}% match</span>
               </div>
               <h3 style={{fontSize:15,fontWeight:600,color:C.dark,margin:'0 0 2px'}}>{cr.name}</h3>
-              <p style={{fontSize:12,color:C.muted,margin:'0 0 12px'}}>{cr.niche}</p>
+              <p style={{fontSize:12,color:C.muted,margin:'0 0 14px'}}>{cr.niche}</p>
               <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',flexWrap:'wrap',gap:8}}>
                 <span style={{display:'flex',alignItems:'center',gap:4,fontSize:12,color:C.muted}}><Users size={12}/> {cr.followers}</span>
                 <div style={{display:'flex',gap:8}}>
@@ -1056,8 +1061,9 @@ function LandingPage({onGetStarted}){
   return(
     <div style={{fontFamily:Font.body,color:C.dark,background:C.bg}}>
       <nav style={{position:'sticky',top:0,zIndex:100,background:`${C.white}EE`,backdropFilter:'blur(12px)',borderBottom:`1px solid ${C.border}`,padding:'0 48px',display:'flex',alignItems:'center',justifyContent:'space-between',height:66}}>
-        <div style={{display:'flex',alignItems:'center'}}>
-          <img src={LOGO_SRC} alt="Flory" style={{height:30,objectFit:'contain'}}/>
+        <div style={{display:'flex',alignItems:'center',gap:10}}>
+          <div style={{width:32,height:32,borderRadius:8,background:`linear-gradient(135deg,${C.peach},${C.rose})`,display:'flex',alignItems:'center',justifyContent:'center'}}><Sparkles size={14} color={C.white}/></div>
+          <span style={{fontFamily:Font.display,fontSize:24,fontWeight:600,color:C.dark,letterSpacing:-.3}}>flory</span>
         </div>
         <div style={{display:'flex',gap:32}}>
           {['Recursos','Preços','Blog','Sobre'].map(l=><a key={l} href="#" style={{fontSize:14,color:C.muted,textDecoration:'none'}}>{l}</a>)}
@@ -1180,8 +1186,9 @@ function LandingPage({onGetStarted}){
 
       <footer style={{padding:'32px 48px',borderTop:`1px solid ${C.border}`,background:C.white}}>
         <div style={{maxWidth:1240,margin:'0 auto',display:'flex',justifyContent:'space-between',alignItems:'center',flexWrap:'wrap',gap:16}}>
-          <div style={{display:'flex',alignItems:'center'}}>
-            <img src={LOGO_SRC} alt="Flory" style={{height:24,objectFit:'contain'}}/>
+          <div style={{display:'flex',alignItems:'center',gap:8}}>
+            <div style={{width:26,height:26,borderRadius:7,background:`linear-gradient(135deg,${C.peach},${C.rose})`,display:'flex',alignItems:'center',justifyContent:'center'}}><Sparkles size={11} color={C.white}/></div>
+            <span style={{fontFamily:Font.display,fontSize:18,fontWeight:600,color:C.dark}}>flory</span>
           </div>
           <p style={{fontSize:13,color:C.muted,margin:0}}>© 2024 Flory. Feito com ✨ para creators brasileiros.</p>
           <div style={{display:'flex',gap:24}}>
