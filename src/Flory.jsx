@@ -1048,15 +1048,10 @@ function LandingPage({onGetStarted}){
   const features=[
     {Icon:TrendingUp,title:'Tendências em Tempo Real',  desc:'Acompanhe hashtags, sons e formatos viralizando antes de todo mundo.'},
     {Icon:Sparkles,  title:'Sugestões de Conteúdo IA',  desc:'Receba ideias personalizadas baseadas no seu nicho e audiência.'},
-    {Icon:Award,     title:'Score & Conquistas',         desc:'Acompanhe seu score de consistência, streak e conquistas na plataforma.'},
-    {Icon:BookOpen,  title:'Educação Digital',           desc:'Cursos e masterclasses com os maiores creators do Brasil.'},
+    {Icon:Award,     title:'Suporte e ajuda',            desc:'Suporte para lidar com o estresse do digital e lidar com cancelamentos.'},
+    {Icon:BookOpen,  title:'Mundo digital',              desc:'Dicas especializadas, sempre se atualizando para auxiliar com as novidades do mundo virtual.'},
     {Icon:Users,     title:'Networking de Creators',     desc:'Encontre criadores do seu nicho para colaborações estratégicas.'},
     {Icon:Hash,      title:'Hashtags Otimizadas',        desc:'Descubra as melhores hashtags e maximize seu alcance orgânico.'},
-  ];
-  const testimonials=[
-    {name:'Julia Fernandes',role:'Criadora de Lifestyle',followers:'48K',text:'A Flory mudou completamente minha estratégia. Em 3 meses triplicei meu engajamento!',img:'https://i.pravatar.cc/80?img=47'},
-    {name:'Marina Costa',   role:'Influencer de Beleza', followers:'92K',text:'As sugestões de IA são incríveis. Sempre sei o que postar e quando postar.',img:'https://i.pravatar.cc/80?img=44'},
-    {name:'Isabela Santos', role:'Content Creator',       followers:'31K',text:'O networking me conectou com criadores incríveis. Já fiz 5 colaborações!',img:'https://i.pravatar.cc/80?img=48'},
   ];
   return(
     <div style={{fontFamily:Font.body,color:C.dark,background:C.bg}}>
@@ -1077,25 +1072,13 @@ function LandingPage({onGetStarted}){
       <section style={{padding:'90px 48px 70px',maxWidth:1240,margin:'0 auto'}}>
         <div className="hg">
           <div className="afu">
-            <div className="afu d1" style={{display:'inline-flex',alignItems:'center',gap:8,padding:'6px 14px',borderRadius:100,background:C.peachLight,marginBottom:26}}>
-              <Sparkles size={12} color={C.medium}/>
-              <span style={{fontSize:12,fontWeight:600,color:C.medium}}>Plataforma #1 para creators brasileiros</span>
-            </div>
             <h1 style={{fontFamily:Font.display,fontSize:60,fontWeight:600,lineHeight:1.08,color:C.dark,margin:'0 0 24px',letterSpacing:-1}}>
-              Cresça com<br/><em style={{color:C.peach}}>inteligência.</em><br/>Crie com propósito.
+              Crie, conecte-se<br/><em style={{color:C.peach}}>e floresça.</em>
             </h1>
-            <p style={{fontSize:16,color:C.muted,lineHeight:1.75,margin:'0 0 38px',maxWidth:440}}>A plataforma inteligente que ajuda pequenos criadores a crescer nas redes sociais com tendências, analytics e IA personalizada.</p>
+            <p style={{fontSize:16,color:C.muted,lineHeight:1.75,margin:'0 0 38px',maxWidth:440}}>Flory, uma empresa especial que se conecta com o cliente, ajudando criadores digitais a crescerem no mundo digital, com análises, suportes e tendências.</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
               <button onClick={onGetStarted} className="bp" style={{padding:'14px 30px',borderRadius:14,border:'none',background:C.peach,color:C.white,fontSize:15,fontWeight:700,boxShadow:`0 8px 28px ${C.peach}55`}}>Experimentar grátis →</button>
               <button style={{padding:'14px 28px',borderRadius:14,border:`1px solid ${C.border}`,background:C.white,fontSize:15,color:C.dark}}>Ver demo</button>
-            </div>
-            <div style={{display:'flex',gap:36,marginTop:44,flexWrap:'wrap'}}>
-              {[['2.000+','creators'],['87%','crescimento médio'],['4.9 ⭐','avaliação']].map(([val,lbl])=>(
-                <div key={lbl}>
-                  <p style={{fontFamily:Font.display,fontSize:26,fontWeight:600,color:C.dark,margin:0}}>{val}</p>
-                  <p style={{fontSize:12,color:C.muted,margin:'2px 0 0'}}>{lbl}</p>
-                </div>
-              ))}
             </div>
           </div>
           <div className="hm afA" style={{position:'relative'}}>
@@ -1137,7 +1120,7 @@ function LandingPage({onGetStarted}){
         <div className="afu" style={{textAlign:'center',marginBottom:52}}>
           <Badge variant="rose">Recursos</Badge>
           <h2 style={{fontFamily:Font.display,fontSize:44,fontWeight:600,color:C.dark,margin:'16px 0 14px',letterSpacing:-.5}}>Tudo que você precisa para criar</h2>
-          <p style={{fontSize:16,color:C.muted,maxWidth:480,margin:'0 auto',lineHeight:1.7}}>Uma plataforma completa com ferramentas inteligentes para criar mais, crescer mais e ganhar mais.</p>
+          <p style={{fontSize:16,color:C.muted,maxWidth:480,margin:'0 auto',lineHeight:1.7}}>Uma plataforma com ferramentas essências para criar e crescer mais.</p>
         </div>
         <div className="gf">
           {features.map((f,i)=>(
@@ -1152,25 +1135,9 @@ function LandingPage({onGetStarted}){
 
       <section style={{padding:'80px 48px',background:C.cream}}>
         <div style={{maxWidth:1240,margin:'0 auto'}}>
-          <div className="afu" style={{textAlign:'center',marginBottom:48}}>
-            <h2 style={{fontFamily:Font.display,fontSize:44,fontWeight:600,color:C.dark,margin:'0 0 10px',letterSpacing:-.5}}>Criadores que já cresceram</h2>
-          </div>
-          <div className="gt">
-            {testimonials.map((t,i)=>(
-              <div key={i} className={`ch afu d${i+1}`} style={{background:C.white,borderRadius:20,padding:28,border:`1px solid ${C.border}`}}>
-                <div style={{display:'flex',gap:3,marginBottom:16}}>
-                  {[...Array(5)].map((_,j)=><Star key={j} size={14} color={C.peach} fill={C.peach}/>)}
-                </div>
-                <p style={{fontSize:15,color:C.dark,lineHeight:1.75,margin:'0 0 22px',fontStyle:'italic'}}>"{t.text}"</p>
-                <div style={{display:'flex',alignItems:'center',gap:12}}>
-                  <Avatar src={t.img} name={t.name} size={40}/>
-                  <div>
-                    <p style={{margin:0,fontSize:14,fontWeight:600,color:C.dark}}>{t.name}</p>
-                    <p style={{margin:0,fontSize:12,color:C.muted}}>{t.role} • {t.followers}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="afu" style={{textAlign:'center'}}>
+            <h2 style={{fontFamily:Font.display,fontSize:44,fontWeight:600,color:C.dark,margin:'0 0 10px',letterSpacing:-.5}}>Conectando</h2>
+            <p style={{fontSize:16,color:C.muted,maxWidth:480,margin:'0 auto',lineHeight:1.7}}>Espaço dedicando para conectar influenciadores com marcas.</p>
           </div>
         </div>
       </section>
@@ -1178,7 +1145,7 @@ function LandingPage({onGetStarted}){
       <section style={{padding:'60px 48px 80px'}}>
         <div className="afu" style={{maxWidth:720,margin:'0 auto',textAlign:'center',background:`linear-gradient(135deg,${C.peach}22,${C.rose}33)`,borderRadius:28,padding:'60px 48px',border:`1px solid ${C.border}`}}>
           <h2 style={{fontFamily:Font.display,fontSize:44,fontWeight:600,color:C.dark,margin:'0 0 16px',letterSpacing:-.5}}>Pronta para crescer?</h2>
-          <p style={{fontSize:16,color:C.muted,margin:'0 0 36px',lineHeight:1.7}}>Junte-se a mais de 2.000 creators que já usam a Flory para crescer de forma inteligente.</p>
+          <p style={{fontSize:16,color:C.muted,margin:'0 0 36px',lineHeight:1.7}}>Junte-se a nós para crescer de forma inteligente.</p>
           <button onClick={onGetStarted} className="bp" style={{padding:'16px 40px',borderRadius:16,border:'none',background:C.peach,color:C.white,fontSize:16,fontWeight:700,boxShadow:`0 12px 36px ${C.peach}55`}}>Começar gratuitamente →</button>
           <p style={{fontSize:12,color:C.muted,margin:'16px 0 0'}}>Sem cartão de crédito • Plano gratuito disponível</p>
         </div>
@@ -1190,9 +1157,9 @@ function LandingPage({onGetStarted}){
             <div style={{width:26,height:26,borderRadius:7,background:`linear-gradient(135deg,${C.peach},${C.rose})`,display:'flex',alignItems:'center',justifyContent:'center'}}><Sparkles size={11} color={C.white}/></div>
             <span style={{fontFamily:Font.display,fontSize:18,fontWeight:600,color:C.dark}}>flory</span>
           </div>
-          <p style={{fontSize:13,color:C.muted,margin:0}}>© 2024 Flory. Feito com ✨ para creators brasileiros.</p>
+          <p style={{fontSize:13,color:C.muted,margin:0}}>@flory.in_ • (00) 00000-0000</p>
           <div style={{display:'flex',gap:24}}>
-            {['Privacidade','Termos','Contato'].map(l=><a key={l} href="#" style={{fontSize:13,color:C.muted,textDecoration:'none'}}>{l}</a>)}
+            {['Termos','Contato'].map(l=><a key={l} href="#" style={{fontSize:13,color:C.muted,textDecoration:'none'}}>{l}</a>)}
           </div>
         </div>
       </footer>
